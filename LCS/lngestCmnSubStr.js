@@ -10,7 +10,7 @@
 
 */
 
-function longestCommonSubString(str1,str2,get_length= false){
+function longestCommonSubString(str1,str2,get_length= false,get_matrix=false){
 
     const m = str1.length;
     const n = str2.length;
@@ -55,6 +55,8 @@ function longestCommonSubString(str1,str2,get_length= false){
 
     if (get_length){ return longestLength };
 
+    if (get_matrix) { return matrix };
+
     // Now let's code the logic to print or return the string...
     // one thing we know is the length at this time which is stored in the longestLength...
     // we will use the matrix's entry who stores the longest length to findout the string...
@@ -62,10 +64,16 @@ function longestCommonSubString(str1,str2,get_length= false){
 
     // i'm giving the substring from str1. if you want from str2 it will be str2.slice(at[1]-longestLength,at[1]+1)...
     // however, both will give the same answer...
+
+    if (longestLength === 1){
+        return str1[at[0] - longestLength];
+    };
+
     return at ? str1.slice(at[0]-longestLength,at[0]+1) : " "
  
 };
 
+module.exports = longestCommonSubString;
 
 if (require.main === module){
     

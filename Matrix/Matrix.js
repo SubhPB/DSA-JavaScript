@@ -53,7 +53,6 @@ module.exports = Matrix;
 
 if (require.main === module){
     //  can perform tests here...
-
     const matrix = new Matrix(2,2);
 
     console.log(matrix.print())
