@@ -31,7 +31,7 @@ Leetcode Problem,
 
 function minWindowSubStr(s,t){
 
-    var sLen = s.length; tLen = t.length;
+    var sLen = s.length, tLen = t.length;
 
     if (tLen === 0 || sLen === 0){ return "" };
 
