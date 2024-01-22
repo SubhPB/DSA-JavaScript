@@ -30,7 +30,6 @@ function findSubsets(arr,targetSum){
 
 
     function backTrack(start,remaining,path){
-        i++;
         if ( remaining === 0){
             results.push([...path]);
             return
