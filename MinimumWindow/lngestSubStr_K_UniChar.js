@@ -4,7 +4,7 @@ S = "aabacbebebe", K = 3
 Output: 
 7
 Explanation: 
-"cbebebe" is the longest substring with 3 distinct characters
+"cbebebe" is the longest subs~tring with 3 distinct characters
 */
 
 function lngestSubStrWith_K_UniqueChars(s,k){
